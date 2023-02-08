@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link de google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  
+    <!-- <link rel="stylesheet" href="./assets/style1.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/style2.css"> -->
+    <!-- <link rel="stylesheet" href="./assets/style3.css"> -->
+    <link rel="stylesheet" href="./assets/style4.css">
+    
+    <title>Registration</title>
+</head>
+<body>
+    <div class="container-flex">
+        <header class="container-nav">
+            <nav class="nav">
+            <a class="active" href="./index.html">Home</a>
+            <a class="nav-about" href="./about.html">About MDHL</a>
+            <a class="nav-contact" href="./contact.html">contact</a>
+            <a class="nav-rules" href="./rules.html">Rules of play & policies</a>
+            <a class="nav-gameinfo" href="./gameinfo.html">Game INFO</a>
+            <a class="nav-form" href="#">Registration Form</a>
+        </nav>
+        </header>
+        
+        
+        <div class="container-form">
+            <h1 class="titreg">Registration Form</h1>
+            <form action="./show_data.html" method="get">
+                <fieldset>
+                    <div>
+                        <label for="nombre">Player's First Name:</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="">
+                        <label for="apellido">Last Name:</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="">
+                    </div>
+                    <div>
+                        <label for="calle">Street Adress:</label>
+                        <input class="inputgrande" type="text" name="calle" id="calle" placeholder="">
+                    </div>
+                    <div>
+                        <label for="ciudad">City:</label>
+                        <input type="text" name="ciudad" id="ciudad" placeholder="">
+                        <label for="zcode">Zip Code:</label>
+                        <input type="text" name="zcode" id="zcode" placeholder="">
+                    </div>
+                    <div>
+                        <label for="cumple">Birt Date(mm/dd/yyyy):</label>
+                        <input type="date" name="cumple" id="cumple" placeholder="">
+                        <label for="lgenero">Gender:</label>
+                        <label for="female">Female</label>
+                        <input type="radio" name="genero" id="female" placeholder="">
+                        <label for="male">Male</label>
+                        <input type="radio" name="genero" id="male" placeholder="">
+                    </div>
+                    <div>
+                        <label for="lgrado">Grade:</label>
+                        <input type="checkbox" name="grado" id="grado0" placeholder="">
+                        <label for="grado0">Pre-School      </label>
+                        <input type="checkbox" name="grado" id="grado1" placeholder="">
+                        <label for="grado1"><sup>1st</sup>  </label>
+                        <input type="checkbox" name="grado" id="grado2" placeholder="">
+                        <label for="grado2"><sup>2st</sup>  </label>
+                        <input type="checkbox" name="grado" id="grado3" placeholder="">
+                        <label for="grado3"><sup>3st</sup>  </label>
+                        <input type="checkbox" name="grado" id="grado4" placeholder="">
+                        <label for="grado4"><sup>4st</sup>  </label>
+                        <input type="checkbox" name="grado" id="grado5" placeholder="">
+                        <label for="grado5"><sup>5st</sup>  </label>
+                    </div>
+                </fieldset>
+            
+                <label for="school"><h2>Wich elementary school do you live near?</h2></label>
+                    <h3>Closest School:</h3>
+                    <ul>
+                        <li>
+                        <input type="checkbox" name="school" id="school1" placeholder="">
+                        <label for="school1">AJ Katzenmaier  </label>
+                        <input type="checkbox" name="school" id="school2" placeholder="">
+                        <label for="school2">Marjorie P Hart  </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="school" id="school3" placeholder="">
+                            <label for="school3">Greenbay  </label>
+                            <input type="checkbox" name="school" id="school4" placeholder="">
+                            <label for="school4">North Elementary  </label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="school" id="school5" placeholder="">
+                            <label for="school5">Howard A Yeager  </label>
+                            <input type="checkbox" name="school" id="school6" placeholder="">
+                            <label for="school6">South Elementary  </label>
+                        </li>
+                    </ul>
+                
+                <h2>What position(s) do you normally play?(check all that apply)</h2>
+                <ul>
+                    <li>
+                    <input type="checkbox" name="posicion" id="pos1" placeholder="">
+                    <label for="pos1">Forward </label>
+                    <input type="checkbox" name="posicion" id="pos2" placeholder="">
+                    <label for="pos2">Midfield  </label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="posicion" id="pos3" placeholder="">
+                        <label for="pos3">Defense</label>
+                        <input type="checkbox" name="posicion" id="pos4" placeholder="">
+                        <label for="pos4">Goalkeeper  </label>
+                    </li>
+                </ul>
+                
+                <h2>Uniform Size:</h2>
+                <ul>
+                    <li>
+                    <input type="checkbox" name="usize" id="usize1" placeholder="">
+                    <label for="usize1">Youth Small</label>
+                    <input type="checkbox" name="usize" id="usize2" placeholder="">
+                    <label for="usize2">  Medium</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="usize" id="usize3" placeholder="">
+                        <label for="usize3">Youth Medium</label>
+                        <input type="checkbox" name="usize" id="usize4" placeholder="">
+                        <label for="usize4">Large  </label>
+                    </li> 
+                    <li>
+                        <input type="checkbox" name="usize" id="usize5" placeholder="">
+                        <label for="usize5">Youth Large</label>
+                        <input type="checkbox" name="usize" id="usize6" placeholder="">
+                        <label for="usize6">Extra-Large  </label>
+                    </li> 
+                    <li>
+                        <input type="checkbox" name="usize" id="usize7" placeholder="">
+                        <label for="usize7">Small</label>
+                    </li>
+                </ul>
+                </fieldset>
+
+                <h2>Permission to Play</h2>
+                <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide by all the rules of the ;igthy Ducks Hockey League (MDHL).In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrant for its hockey programs and activities, I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for practices and games, against any claim by or on behalf of the registrant as a result of the registrant's participation in the programand/orbeing transported to or from MDHL sponsored activities,wich transportation</p>
+                <p>By signing below, I herebyagree and authorizethe above.In addition, by signing below, I also acknowledge that I hace read the cancellation policy and agree to its terms.</p>
+
+                    <label for="firma">Parent/Guardian Signature:</label>
+                        <input class="inputchico" type="text" name="firma" id="firma" placeholder="">
+                    <label for="fecha">Date:</label>
+                        <input class="inputchico" type="text" name="fecha" id="fecha" placeholder="">
+                
+                    <input class="inputchico1" type="submit" value="Send">
+                    <input class="inputchico1" type="reset" value="Reset">
+            </form>
+        </div>
+</div>
+</body>
+</html>
